@@ -7,6 +7,7 @@ namespace Sulao\CraftQiniu;
 use Craft;
 use craft\behaviors\EnvAttributeParserBehavior;
 use craft\flysystem\base\FlysystemFs;
+use craft\helpers\App;
 use craft\helpers\Assets;
 use League\Flysystem\FilesystemAdapter;
 use Overtrue\Flysystem\Qiniu\QiniuAdapter;
@@ -52,10 +53,10 @@ class Fs extends FlysystemFs
     protected function createAdapter(): FilesystemAdapter
     {
         return new QiniuAdapter(
-            $this->accessKey,
-            $this->secretKey,
-            $this->bucket,
-            $this->domain
+            App::parseEnv($this->accessKey),
+            App::parseEnv($this->secretKey),
+            App::parseEnv($this->bucket),
+            App::parseEnv($this->domain)
         );
     }
 
