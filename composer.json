@@ -21,9 +21,9 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": "^8.0.2",
-    "craftcms/cms": "^4.0.0-beta.1",
-    "craftcms/flysystem": "^1.0.0-beta.2",
+    "php": "^8.2",
+    "craftcms/cms": "^5.0.0",
+    "craftcms/flysystem": "^2.0.0",
     "overtrue/flysystem-qiniu": "^3.2"
   },
   "autoload": {

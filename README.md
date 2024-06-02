@@ -5,8 +5,8 @@ This plugin provides an [Qiniu Kodo](https://www.qiniu.com/products/kodo) integr
 
 ## Requirements
 
-- PHP 8.0.2 or later
-- Craft CMS 4.0 or later
+- PHP 8.2 or later
+- Craft CMS 5.0 or later
 
 ## Installation
 
